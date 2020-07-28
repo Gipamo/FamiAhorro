@@ -49,3 +49,9 @@ Desarrollar un minimo producto viable de una pagina web que permita crear metas 
 - Descubrir nuevos frameworks para crear la aplicacion lo mas optima posible
 - Desarrollar un sistema de inicio de sesion y una base de datos que facilite la ejecucion de las tareas de la pagina web
 - Pemitir que el usuario vea de forma grafica el progreso de su ahorro
+
+
+
+### Modelo de negocio
+
+https://imgur.com/78OHhIb
