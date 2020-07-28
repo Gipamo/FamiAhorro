@@ -25,6 +25,8 @@ La solucion a esto es el desarrollo de una pagina web que permita a un usuario d
 
 # Justificacion
 
+Debido a todas las dificultades para poder gestionar un ahorro cuando se empieza, se decide desarrollar esta pagina, para apoyar la gestion del ahorro de las personas, y ademas para apoyar la gestion de creacion de metas de ahorro familiares con lo que se consiguie mejorar las relaciones familiares en pro de fomentar el ahorro
+
 # Estado del arte
 ### Nequi
 https://imgur.com/mahkfKE
@@ -41,7 +43,9 @@ https://imgur.com/P1g3AjN
 
 # Objetivo general
 
+Desarrollar un minimo producto viable de una pagina web que permita crear metas de ahorro en familia y que por consecuencia fomente el ahorro familiar
+
 ### Objetivos especificos
-- Desarrollo
-- Paginas Web
-- Ahorro en Familia
+- Descubrir nuevos frameworks para crear la aplicacion lo mas optima posible
+- Desarrollar un sistema de inicio de sesion y una base de datos que facilite la ejecucion de las tareas de la pagina web
+- Pemitir que el usuario vea de forma grafica el progreso de su ahorro
