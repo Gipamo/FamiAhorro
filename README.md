@@ -29,21 +29,22 @@ Debido a todas las dificultades para poder gestionar un ahorro cuando se empieza
 
 # Estado del arte
 ### Nequi
-https://imgur.com/mahkfKE
-https://imgur.com/p7xkBJv
+![nequi1](https://imgur.com/mahkfKE)
+![nequi2](https://imgur.com/p7xkBJv)
+
 
 Nequi tiene un sistema de metas, las cuales puedes crear con cierto limite, y aportar cierta cuota cada cierto tiempo, ademas de todo  como Nequi es un app bancaria, tiene una opcion de ahorro automatico que toma dinero de tu cuenta y las deposita en la meta
 
 ### Oingz
-https://imgur.com/e8mAf0B
-https://imgur.com/wxeOzlX
-https://imgur.com/bR6wnE4
+![oin1](https://imgur.com/e8mAf0B)
+![oin2](https://imgur.com/wxeOzlX)
+![oin3](https://imgur.com/bR6wnE4)
 
 Oingz es un sistema de cumplir metas, el usuario crea una cuenta y le hacen una serie de preguntas para personalizar algunas metas para el usuario, ademas de la fecha deseada, la meta se crea colocando el monto para la meta y el ya ahorrado, al crearla, el usuario la va actualizando a medida que va ahorrando
 
 ### Coinch
-https://imgur.com/nCDUD4u
-https://imgur.com/P1g3AjN
+![coi2](https://imgur.com/nCDUD4u)
+![coi1](https://imgur.com/P1g3AjN)
 
 Coinch es parecida a Oingz, solo que sin el sistema de preguntas para personalizar las metas
 
