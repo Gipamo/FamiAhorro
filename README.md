@@ -23,3 +23,50 @@ Segun el diario El Tiempo, solo 2 de cada 10 hogares ahorran para imprevistos, d
 
 La solucion a esto es el desarrollo de una pagina web que permita a un usuario de una familia divivir una meta de ahorro familiar, estimando las cuotas por miembro y la meta con el objetivo de manejar el dinero por el usuario, asi el usuario se concentre en cumplir con la cuota de ahorro, y debido a que es familiar, se tendra un poco de presion por parte de los demas miembros, lo cual puede aumentar la puntualidad al ahorrar.
 
+# Justificacion
+
+Debido a todas las dificultades para poder gestionar un ahorro cuando se empieza, se decide desarrollar esta pagina, para apoyar la gestion del ahorro de las personas, y ademas para apoyar la gestion de creacion de metas de ahorro familiares con lo que se consiguie mejorar las relaciones familiares en pro de fomentar el ahorro
+
+# Estado del arte
+### Nequi
+https://imgur.com/mahkfKE
+https://imgur.com/p7xkBJv
+
+
+Nequi tiene un sistema de metas, las cuales puedes crear con cierto limite, y aportar cierta cuota cada cierto tiempo, ademas de todo  como Nequi es un app bancaria, tiene una opcion de ahorro automatico que toma dinero de tu cuenta y las deposita en la meta
+
+### Oingz
+https://imgur.com/e8mAf0B
+https://imgur.com/wxeOzlX
+https://imgur.com/bR6wnE4
+
+Oingz es un sistema de cumplir metas, el usuario crea una cuenta y le hacen una serie de preguntas para personalizar algunas metas para el usuario, ademas de la fecha deseada, la meta se crea colocando el monto para la meta y el ya ahorrado, al crearla, el usuario la va actualizando a medida que va ahorrando
+
+### Coinch
+https://imgur.com/nCDUD4u
+https://imgur.com/P1g3AjN
+
+Coinch es parecida a Oingz, solo que sin el sistema de preguntas para personalizar las metas
+
+Nuestro agregado es una cuenta multiusuario, que un usuario pueda gestionar el ahorro de todos los miembros de la familia
+
+# Objetivo general
+
+Desarrollar un minimo producto viable de una pagina web que permita crear metas de ahorro en familia y que por consecuencia fomente el ahorro familiar
+
+### Objetivos especificos
+- Descubrir nuevos frameworks para crear la aplicacion lo mas optima posible
+- Desarrollar un sistema de inicio de sesion y una base de datos que facilite la ejecucion de las tareas de la pagina web
+- Pemitir que el usuario vea de forma grafica el progreso de su ahorro
+
+
+
+# Modelo de negocio
+
+https://imgur.com/78OHhIb
+
+# Descripcion
+
+Las familias del país han visto la necesidad de tener un ahorro programado, sea para las necesidades básicas del hogar, como también para entretenimiento, viajes, estudio. Es por ello que famiahorro gestiona el dinero de la familia, permite tener una visión clara sobre lo que hay y lo que ha transcurrido en el tiempo con él, planear eventos de cualquier tipo y tener un control centralizado de sus ahorros.
+la idea es que la aplicacion funcione inicialmente bajo un motor de base de datos SQL Server, conectado con un lenguaje de programación orientado a objetos C# de Microsoft, integrado con su framework para desarrollo web ASP.NET, un framework de plantillas para las vistas de la aplicación llamado Blazor, igualmente de Microsoft. Dentro de la estructua física la base de datos correrá en un sistema gestor de bases de datos llamado SQL Server Management Studio, un servidor local para el despliegue del backend de nombre Internet Information Services.
+
