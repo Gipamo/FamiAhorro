@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Lora';
+    margin: 0;
 }
 .parent {
     display: grid;
@@ -11,15 +12,83 @@ body{
     grid-row-gap: 0px;
     }
 
-.div1 {
+.header {
     grid-area: 1 / 2 / 2 / 3;
     background-color: #5CDB95;
 }
-.div2 {
+.info {
     grid-area: 2 / 2 / 3 / 3;
     background-color: #EDF5E1;
  }
-.div3 {
+.footer {
     grid-area: 3 / 2 / 4 / 3;
     background-color: #05386B;
+}
+
+.principalButton {
+	background-color:#05386B;
+	border-radius:10px;
+	border:1px solid #EDF5E1;
+	display:inline-block;
+	color:#ffffff;
+	font-size:15px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+
+.principalButton:active {
+	position:relative;
+	top:1px;
+}
+
+.smallButton{
+	background-color:#05386B;
+	border-radius:10px;
+	border:1px solid #EDF5E1;
+	display:inline-block;
+	color:#ffffff;
+	font-size:12px;
+	padding:6px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+
+.test1{
+    background-color: #5CDB95;
+}
+
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5CDB95;
+}
+
+ul.navbar li {
+    float: right;
+}
+
+ul.navbar li span {
+    float: left;
+}
+
+ul.navbar li a {
+    display: inline-block;
+    text-align: center;
+    color: #EDF5E1;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navbar li a:active {
+    background-color:#05386B;
+}
+
+.title{
+    color: #EDF5E1;
+    font-size: 48px;
+    float: right;
 }
