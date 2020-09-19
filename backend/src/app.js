@@ -15,5 +15,6 @@ app.use("/api/prestamos", require("./routes/prestamos"));
 app.use("/api/familias", require("./routes/familias"));
 app.use("/api/dineroFamilias", require("./routes/dineroFamilias"));
 app.use("/api/eventos", require("./routes/eventos"));
+app.use("/api/login", require("./routes/eventos"));
 
 module.exports = app;
