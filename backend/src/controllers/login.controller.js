@@ -9,14 +9,14 @@ loginCtrl.getUser = async (req, res) => {
     if (!usuario) {
       return res.status(400).json({
         err: {
-          message: "Usuario incorrecto",
+          message: "User is incorrect",
         },
       });
     }
     if (!bcrypt.compareSync(body.params.password, usuario.password)) {
       return res.status(400).json({
         err: {
-          message: "Contraseña incorrecta",
+          message: "Password is incorrect",
         },
       });
     }
