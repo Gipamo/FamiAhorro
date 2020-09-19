@@ -3,6 +3,6 @@ const router = Router();
 
 const { getUser } = require("../controllers/login.controller");
 
-router.route("/:user/:password").get(getUser);
+router.route("/:email/:password").get(getUser);
 
 module.exports = router;
