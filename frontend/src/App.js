@@ -13,7 +13,9 @@ import Monto from './components/Monto';
 import Depositar from './components/Depositar';
 import SolicitarPrestamo from './components/SolicitarPrestamo'
 import Estadisticas from './components/Estadisticas';
-import Prestamos from './components/Prestamos'
+import Prestamos from './components/Prestamos';
+import QuienesSomos from './components/QuienesSomos';
+import Contactenos from './components/Contactenos'
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
 
@@ -62,6 +64,12 @@ function App() {
           </Route>
           <Route exact path="/createEvent">
             <CreateEvento/>
+          </Route>
+          <Route exact path="/quienessomos">
+            <QuienesSomos/>
+          </Route>
+          <Route exact path="/contactenos">
+            <Contactenos/>
           </Route>
         </Switch>
         <Footer/>
