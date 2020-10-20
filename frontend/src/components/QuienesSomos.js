@@ -7,7 +7,7 @@ export default function QuienesSomos(){
         <main className='container'>
             <div className="row">
                 <div className="col-12">
-                    <h2 className='text-primary mt-5 mb-5'>¿Quiénes somos?</h2>
+                    <h2 className='text-dark mt-5 mb-5'>¿Quiénes somos?</h2>
                 </div>
                 <div class="card-deck justify-content-center">
                     <div class="card border-primary align-items-center mr-4">

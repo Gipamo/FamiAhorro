@@ -14,9 +14,9 @@ export default function Contactenos(){
     return(
             <form className='container' onSubmit={handleSubmit(onSubmit)}>
                 <div className="row">
-                    <h2 className='text-primary col-12 mb-5 mt-5'>Contáctenos</h2>
+                    <h2 className='text-dark col-12 mb-5 mt-5'>Contáctenos</h2>
                     <div className="form-group col-12">
-                        <label className='text-primary mb-5' htmlFor="email">Correo Electrónico</label>
+                        <label className='text-dark mb-5' htmlFor="email">Correo Electrónico</label>
                         <input type='text' className='form-control input mb-5 w-50 mx-auto' placeholder='Ingrese su correo' name="email" defaultValue="" ref={register({required:true})} />
                         {errors.email && <span className="text-danger">¡Ingrese su correo de contacto!</span>}
                     </div>
@@ -25,7 +25,7 @@ export default function Contactenos(){
                         {errors.pqr && <span className="text-danger"><br/>Por favor ingrese su comentario</span>}
                     </div>
                     <div className="form-group col-12">
-                    <button type='submit' className='btn btn-primary'>Contactar</button>
+                    <button type='submit' className='btn btn-dark'>Contactar</button>
                 </div>
                 </div>
             </form>

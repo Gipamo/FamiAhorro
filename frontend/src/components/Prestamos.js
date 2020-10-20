@@ -6,7 +6,7 @@ export default function Eventos(){
     const history = useHistory();
     return(
         <section className='container mt-5'>
-            <h2 className="text-primary mb-5">Solicitudes de Préstamo</h2>
+            <h2 className="text-dark mb-5">Solicitudes de Préstamo</h2>
             <div className='row'>
                 <div className="col-12">
                     <ul className='list-group list-group-flush'>

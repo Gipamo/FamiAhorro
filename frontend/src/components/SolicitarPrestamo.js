@@ -11,15 +11,15 @@ export default function SolicitarPrestamo(){
     return(
         <form className='container' onSubmit={handleSubmit(onSubmit)}>
             <div className="row">
-                <h2 className='text-primary col-12 mb-5 mt-5'>Solicita un préstamo</h2>
+                <h2 className='text-dark col-12 mb-5 mt-5'>Solicita un préstamo</h2>
                 <div className="form-group col-12 mb-5">
-                    <label className='text-primary mb-5' htmlFor="cantidad">¿Cuánto dinero necesitas?</label>
+                    <label className='text-dark mb-5' htmlFor="cantidad">¿Cuánto dinero necesitas?</label>
                     <input type='number' className='form-control input w-50 mx-auto' name="cantidad" 
                     ref={register({required:true,validate:value => value > 0})} />
                     {errors.cantidad && <span className="text-danger">¡La cantidad es obligatoria y mayor a cero!</span>}
                 </div>
                 <div className="form-group col-12">
-                    <button type='submit' className='btn btn-primary'>Solicitar Préstamo</button>
+                    <button type='submit' className='btn btn-dark'>Solicitar Préstamo</button>
                 </div>
             </div>
         </form>

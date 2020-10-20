@@ -26,7 +26,7 @@ export default function SearchIntegrantes(){
                             <th>{integrante.email}</th>
                             <th>{integrante.identificacion}</th>
                             <th>{integrante.nrocuenta}</th>
-                            <th><button className='btn btn-primary' type="button"
+                            <th><button className='btn btn-dark' type="button"
                             onClick={() => {history.push('/editIntegrante')}}>Actualizar</button></th>
                             <th><button className='btn btn-danger' type="button"
                             onClick={() => {history.push('/integrantes')}}>Eliminar</button></th>

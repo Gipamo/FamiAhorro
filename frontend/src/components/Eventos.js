@@ -6,7 +6,7 @@ export default function Eventos(){
     const history = useHistory();
     return(
         <section className='container mt-5'>
-            <h2 className="text-primary mb-5">Eventos de tu familia</h2>
+            <h2 className="text-dark mb-5">Eventos de tu familia</h2>
             <div className='row'>
                 <div className="col-12">
                     <ul className='list-group list-group-flush'>
@@ -26,7 +26,7 @@ export default function Eventos(){
                     </ul>
                 </div>
             </div>
-            <button className='btn btn-primary' onClick={(e) =>{
+            <button className='btn btn-dark' onClick={(e) =>{
                 history.push('createEvent')
             }} type="button">Crear Evento</button>
         </section>
