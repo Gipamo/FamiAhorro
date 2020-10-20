@@ -12,7 +12,7 @@ app.use(cors());
 app.use(express.json());
 app.use(
   session({
-    secret: "famiahorropassword123",
+    secret: process.env.SECRET,
     resave: true,
     saveUninitialized: true,
   })
@@ -28,11 +28,7 @@ var auth = function (req, res, next) {
 
 // routes
 app.use("/api/integrantes", auth, require("./routes/integrantes"));
-app.use("/api/prestamos", auth, require("./routes/prestamos"));
-app.use("/api/familias", auth, require("./routes/familias"));
-app.use("/api/dineroFamilias", auth, require("./routes/dineroFamilias"));
-app.use("/api/eventos", auth, require("./routes/eventos"));
-app.use("/api/login", require("./routes/login"));
 app.use("/api/logout", require("./routes/logout"));
+app.use("/api/login", require("./routes/login"));
 
 module.exports = app;

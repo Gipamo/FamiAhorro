@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Carlos Daniel Fernandez",
+        "cantidad": "$120.000",
+        "fecha_prestamo": "27/03/2020"
+    },
+    {
+        "nombre": "Andrés Ramos",
+        "cantidad": "$200.000",
+        "fecha_prestamo": "10/02/2020"
+    },
+    {
+        "nombre": "Gian Paul Moreno",
+        "cantidad": "$30.000",
+        "fecha_prestamo": "22/05/2020"
+    },
+    {
+        "nombre": "Juan David Sánchez",
+        "cantidad": "$50.000",
+        "fecha_prestamo": "01/04/2020"
+    }
+]

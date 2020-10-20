@@ -1,11 +1,11 @@
 const bcrypt = require("bcrypt");
-const Usuario = require("../models/Integrante");
+const Integrantes = require("../models/Integrantes");
 
 const loginCtrl = {};
 
 loginCtrl.getUser = async (req, res) => {
   try {
-    const usuario = await Usuario.findOne({ email: body.params.email });
+    const usuario = await Integrantes.findOne({ email: req.params.email });
     if (!usuario) {
       return res.status(400).json({
         err: {
@@ -13,14 +13,14 @@ loginCtrl.getUser = async (req, res) => {
         },
       });
     }
-    if (!bcrypt.compareSync(body.params.password, usuario.password)) {
+    if (!bcrypt.compareSync(body.params.password, usuario.contrasena)) {
       return res.status(400).json({
         err: {
           message: "Password is incorrect",
         },
       });
     }
-    req.session.idIntegrante = usuario._id;
+    req.session.idIntegrante = usuario.id;
     req.session.rolUsuario = usuario.rol;
     res.json({
       user: usuario,

@@ -3,10 +3,10 @@ let rolesValidos = {
   values: ["ADMIN", "USER", "SYSADMIN"],
   message: "{VALUE} no es un rol válido",
 };
-const integranteSchema = new Schema({
+const integrantesSchema = new Schema({
   cedula: { type: Number, required: true, unique: true },
   nombre: { type: String, required: true },
-  id_familia: { type: String, required: true },
+  id_familia: { type: Schema.Types.ObjectID, required: true },
   email: { type: String, required: true },
   contrasena: { type: String, required: true },
   direccion: String,
@@ -18,10 +18,10 @@ const integranteSchema = new Schema({
     enum: rolesValidos,
   },
 });
-integranteSchema.methods.toJSON = function () {
+integrantesSchema.methods.toJSON = function () {
   let integrante = this;
   let integranteObject = integrante.toObject();
   delete integranteObject.password;
-  return userObject;
+  return integranteObject;
 };
-module.exports = model("Integrante", integranteSchema);
+module.exports = model("Integrantes", integrantesSchema);

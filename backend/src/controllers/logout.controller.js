@@ -1,6 +1,6 @@
 const logoutCtrl = {};
 
-logoutCtrl.closeSession = () => {
+logoutCtrl.closeSession = (req,res) => {
   req.session.destroy();
   res.json({ message: "Session closed successfully" });
 };

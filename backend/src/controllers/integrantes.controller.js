@@ -1,11 +1,9 @@
 const integranteCtrl = {};
+const Integrantes = require("../models/Integrantes");
 
-const Integrante = require("../models/Integrante");
-const Familia = require("../models/Familia");
-
-userCtrl.getIntegrantes = async (req, res) => {
+integranteCtrl.getIntegrantes = async (req, res) => {
   try {
-    const integrantes = await Integrante.find();
+    const integrantes = await Integrantes.find();
     res.json(integrantes);
   } catch (err) {
     res.status(400).json({
@@ -14,11 +12,23 @@ userCtrl.getIntegrantes = async (req, res) => {
   }
 };
 
-userCtrl.createIntegrante = async (req, res) => {
+integranteCtrl.getIntegrante = async (req, res) => {
+  const {idIntegrante} = req.params;
+  try {
+    const integrante = await Integrantes.findById({id:idIntegrante});
+    res.json(integrante);
+  } catch (err) {
+    res.status(404).json({
+      error: 'Integrante was not found'
+    })
+  }
+};
+
+integranteCtrl.createIntegrante = async (req, res) => {
   if (process.session.rolUsuario === "ADMIN") {
     try {
-      const { id_familia } = await Integrante.findOne({
-        _id: process.session.idIntegrante,
+      const { id_familia } = await Integrantes.findOne({
+        id: process.session.idIntegrante,
       });
       const { cedula, nombre, email, direccion, telefono } = req.body;
 
@@ -34,19 +44,34 @@ userCtrl.createIntegrante = async (req, res) => {
       });
       await newUser.save();
       res.json("Integrante created successfully");
-    } catch (e) {
-      console.log(e);
-      res.json(e.errmsg);
+    } catch (err) {
+      res.json(err.errmsg);
     }
   } else {
-    res.json("You can not create an Integrante");
+    res.status(403).json("You can not create an Integrante");
   }
 };
 
-userCtrl.deleteIntegrante = async (req, res) => {
+integranteCtrl.updateIntegrante = async (req,res) => {
+  const {id} = req.params;
+  const { cedula, nombre, email, direccion, telefono } = req.body;
+  try {
+    await Integrantes.updateOne({id:id},{
+      cedula, nombre, email, direccion, telefono
+    })
+  } catch (err) {
+    res.json(err.errmsg)
+  }
+}
+
+integranteCtrl.deleteIntegrante = async (req, res) => {
   const { id } = req.params;
-  await Integrante.findByIdAndDelete(id);
-  res.json("Integrante was deleted successfully");
+  try{
+    await Integrantes.findByIdAndDelete(id);
+    res.json("Integrante was deleted successfully");
+  }catch(err){
+    res.json(err.errmsg)
+  }
 };
 
-module.exports = userCtrl;
+module.exports = integranteCtrl;
