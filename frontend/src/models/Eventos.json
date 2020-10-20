@@ -1,0 +1,18 @@
+[
+    {
+        "descripcion":"Salida a comer hamburguesa",
+        "fecha_evento":"20/11/2020"
+    },
+    {
+        "descripcion":"Ir a piscina de comfama de girardot",
+        "fecha_evento":"13/10/2020"
+    },
+    {
+        "descripcion":"Jugar paintball a las 4pm",
+        "fecha_evento":"03/02/2021"
+    },
+    {
+        "descripcion":"Visitar a la abuela",
+        "fecha_evento":"07/02/2021"
+    }
+]

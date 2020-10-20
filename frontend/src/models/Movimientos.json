@@ -1,0 +1,20 @@
+[
+    {
+        "nombre":"Carlos Fernandez",
+        "tipoMovimiento":"Préstamo",
+        "fecha": "19/10/2020",
+        "descripcion":"$150.000"
+    },
+    {
+        "nombre":"Gian Paul Moreno",
+        "tipoMovimiento":"Depósito",
+        "fecha": "11/05/2020",
+        "descripcion":"$300.000"
+    },
+    {
+        "nombre":"Juan David Sánchez",
+        "tipoMovimiento":"Evento",
+        "fecha": "24/12/2020",
+        "descripcion":"Ir al mirador de las palmas a tomar chocolate"
+    }
+]

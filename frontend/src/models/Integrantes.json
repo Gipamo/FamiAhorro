@@ -1,0 +1,22 @@
+[
+    {
+        "nombre":"Carlos Fernandez",
+        "telefono": "319 4318173",
+        "email":"carlos.fernandezg@upb.edu.co",
+        "identificacion":1001226537,
+        "nrocuenta":"18571205"
+    },
+    {
+        "nombre":"Gian Paul Moreno",
+        "telefono": "301 3527778",
+        "email":"gian.moreno@upb.edu.co",
+        "identificacion":999999,
+        "nrocuenta":"4574323"
+    },{
+        "nombre":"Juan David Sánchez",
+        "telefono": "301 3424744",
+        "email":"juand.sanchez@upb.edu.co",
+        "identificacion":444444,
+        "nrocuenta":"230957283"
+    }
+]
